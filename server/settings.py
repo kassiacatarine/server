@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pyprende.core', #Instala o app no projeto
+    'pyprende.courses'
 ]
 
 MIDDLEWARE = [

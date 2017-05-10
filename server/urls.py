@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('pyprende.core.urls', namespace='core')),# Chama o arquivo de urls do app core
+    url(r'^cursos/', include('pyprende.courses.urls', namespace='courses'))
 ]
