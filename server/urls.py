@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from core import views
+from core import views # Imposta as funções existentes na view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    # url(r'^$', views.home, name='home'),# Chama a função existente na view
-
+    url(r'^$', views.home, name='home'),# Chama a função existente na view
 ]

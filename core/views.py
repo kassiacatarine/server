@@ -3,3 +3,10 @@ from django.shortcuts import render
 
 def home(request):
     # return HttpResponse(u'Olá Mundo') # envia para o servidor 'Ola Mundo'
+    return render(request, 'home.html', {'usuario': 'Kassia'}) 
+    ''' 
+        -> return render
+        Responsavel por chamar um template, como o exemplo no segundo parametro
+        o terceiro parametro é um dicionario assim pode haver o uso de variaveis
+        no template.
+    '''
