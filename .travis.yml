@@ -13,7 +13,7 @@ before_script:
   - "python manage.py migrate"
 
 script:
-  - - coverage run --source=server py.test
+  - coverage run --source=server py.test
 
 after_success:
   - coveralls
