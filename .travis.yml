@@ -6,14 +6,14 @@ sudo: false
 
 install:
   - pip install -r requirements.txt
-  - pip install coveralls
+  - pip install pytest-cov
 
 before_script:
   - "python manage.py makemigrations"
   - "python manage.py migrate"
 
 script:
-  - coverage run --source=server, py.test
+  - py.test --cov=server
 
 after_success:
   - coveralls
