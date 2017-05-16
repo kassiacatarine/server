@@ -6,10 +6,14 @@ sudo: false
 
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 
 before_script:
   - "python manage.py makemigrations"
   - "python manage.py migrate"
 
 script:
-  - py.test
+  - - coverage run --source=server py.test
+
+after_success:
+  - coveralls
