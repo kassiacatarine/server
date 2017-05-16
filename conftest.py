@@ -4,7 +4,10 @@ from django.conf import settings
 
 # We manually designate which settings we will be using in an environment variable
 # This is similar to what occurs in the `manage.py`
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.config.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 
+                        'core.config.settings',
+                        'courses.config.settings',
+                        )
 
 
 # `pytest` automatically calls this function once when tests are run.
