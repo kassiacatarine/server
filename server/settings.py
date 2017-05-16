@@ -25,7 +25,7 @@ SECRET_KEY = 'iqb!0b9gw#*@xpib%fm@2-g+367vo5os-0v25y5q^3u*347ao6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kassia.pythonanywhere.com']
 
 
 # Application definition
