@@ -13,6 +13,7 @@ before_script:
   - "python manage.py migrate"
 
 script:
+  - flake8 cmdbox
   - coverage run --source=pyprende setup.py test
 
 after_success:
