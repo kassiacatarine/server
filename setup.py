@@ -1,5 +1,6 @@
 from setuptools.command.test import test as TestCommand
 
+
 class PyTest(TestCommand):
 
     """Setup the py.test test runner."""

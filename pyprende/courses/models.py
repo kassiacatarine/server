@@ -1,11 +1,13 @@
 from django.db import models
 
+
 class CourseManager(models.Manager):
     def search(self, query):
         return self.get_queryset().filter(
             models.Q(name__icontains=query) |
             models.Q(description__icontains=query)
         )
+
 
 class Course(models.Model):
 
@@ -30,7 +32,7 @@ class Course(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ('courses:details', (), {'slug': self.slug})
-    
+
     class Meta:
         verbose_name = 'Curso'
         verbose_name_plural = 'Cursos'

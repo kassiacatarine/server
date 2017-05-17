@@ -1,1 +1,1 @@
-from .views_tests import HomeViewTest
+from .views_tests import HomeViewTest  # noqa
