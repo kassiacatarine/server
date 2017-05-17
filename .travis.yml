@@ -14,7 +14,7 @@ before_script:
 
 script:
   - flake8 cmdbox
-  - coverage run --source=pyprende setup.py test
+  - coverage run --source=pyprende setup.py test --settings=cmdbox.tests_settings
 
 after_success:
   - coveralls
