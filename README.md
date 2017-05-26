@@ -1,4 +1,5 @@
 # server
 [![Build Status](https://travis-ci.org/kassiacatarine/server.svg?branch=master)](https://travis-ci.org/kassiacatarine/server)
-[![Coverage Status](https://coveralls.io/repos/github/kassiacatarine/server/badge.svg?branch=master)](https://coveralls.io/github/kassiacatarine/server?branch=master)
+088f2a2e-1a5e-41f8-a686-0ce20b0ce2d6
+
 Aplicação web para cursos
