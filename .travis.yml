@@ -5,10 +5,17 @@ cache: pip
 sudo: false
 
 install:
-  - pip install tox codecov
+  - pip install -r requirements.txt
+  - pip install codecov
+  - pip install pytest-cov
 
+before_script: [
+  - python manage.py makemigrations
+  - python manage.py migrate
 script:
-  - tox
+  - flake8 cmdbox
+  - coverage run --source=pyprende setup.py test --settings=cmdbox.tests_settings
+  - py.test --cov=pyprende/
 
 after_success:
   - codecov 
