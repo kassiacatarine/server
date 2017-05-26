@@ -9,9 +9,10 @@ install:
   - pip install codecov
   - pip install pytest-cov
 
-before_script: [
+before_script:
   - python manage.py makemigrations
   - python manage.py migrate
+
 script:
   - flake8 cmdbox
   - coverage run --source=pyprende setup.py test --settings=cmdbox.tests_settings
