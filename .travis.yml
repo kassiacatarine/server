@@ -7,10 +7,6 @@ sudo: false
 install:
   - pip install tox codecov
 
-before_script:
-  - "python manage.py makemigrations"
-  - "python manage.py migrate"
-
 script:
   - tox
 
