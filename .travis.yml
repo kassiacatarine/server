@@ -12,5 +12,4 @@ before_script:
   - "python manage.py migrate"
 
 script:
-  - flake8 cmdbox
-  - setup.py test --settings=cmdbox.tests_settings
+  - setup.py test
